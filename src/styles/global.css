@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0A0F2C;
+  --cobalt: #1E5CFF;
+  --cobalt-light: #4a7fff;
+  --gold: #F0A500;
+  --warm-white: #F5F5F0;
+  --dark-card: #0F1535;
+  --dark-surface: #141836;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--warm-white);
+  color: var(--navy);
+  overflow-x: hidden;
+}
+
+.dark body {
+  background-color: var(--navy);
+  color: var(--warm-white);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cobalt), var(--gold));
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+/* Grain texture overlay */
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Logo carousel */
+.logo-carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 35s linear infinite;
+}
+
+.logo-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Diagonal divider */
+.diagonal-top {
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.diagonal-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+.diagonal-both {
+  clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gold gradient text */
+.gold-gradient {
+  background: linear-gradient(135deg, #F0A500, #FFD166);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Cobalt gradient text */
+.cobalt-gradient {
+  background: linear-gradient(135deg, #1E5CFF, #4a7fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--navy);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--cobalt);
+  border-radius: 3px;
+}
+
+/* Grid pattern background */
+.grid-bg {
+  background-image: linear-gradient(rgba(30, 92, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 92, 255, 0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Masonry grid */
+.masonry-grid {
+  columns: 3;
+  column-gap: 1rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    columns: 1;
+  }
+}
+
+/* Button hover shimmer */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+.btn-shimmer:hover::before {
+  left: 150%;
+}
+
+/* Floating shapes */
+.shape-blob {
+  border-radius: 62% 38% 46% 54% / 60% 44% 56% 40%;
+  animation: morphBlob 8s ease-in-out infinite alternate;
+}
+
+@keyframes morphBlob {
+  0% { border-radius: 62% 38% 46% 54% / 60% 44% 56% 40%; }
+  50% { border-radius: 38% 62% 54% 46% / 44% 60% 40% 56%; }
+  100% { border-radius: 55% 45% 38% 62% / 52% 48% 60% 40%; }
+}
+
+/* Coming soon badge pulse */
+.badge-pulse {
+  animation: badgePulse 2s ease-in-out infinite;
+}
+@keyframes badgePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(240, 165, 0, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(240, 165, 0, 0); }
+}
+
+/* Section transitions */
+.section-transition {
+  transition: all 0.3s ease;
+}
+
+/* Preloader */
+.preloader-logo path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLogo 1.5s ease forwards;
+}
+@keyframes drawLogo {
+  to { stroke-dashoffset: 0; }
+}
