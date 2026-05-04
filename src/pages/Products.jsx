@@ -82,17 +82,18 @@ function EmailCapture({ placeholder = 'Enter your email address' }) {
 }
 
 const gadgetFeatures = [
-  'Premium peripherals for the modern workspace',
-  'Curated keyboards, mice & desk accessories',
-  'Ergonomic solutions for remote teams',
-  'Fast shipping across Nigeria & West Africa',
+  'Laptops directly imported from China & the UK',
+  'Competitive prices — no middlemen, no markups',
+  'Available online and in physical stores',
+  'Global distribution with fast local delivery',
 ]
 
 const aveztFeatures = [
-  'A bold new platform — unlike anything you\'ve seen',
-  'Built for creative professionals & entrepreneurs',
-  'Seamlessly blends AI, community, and commerce',
-  'Early access perks for subscribers',
+  'Invest in palm oil, maize, cocoa, livestock & more',
+  'Minimum 2-month investment cycles, up to 1 year',
+  '20% commission-based ROI model',
+  'Real-time price tracking & automated payouts',
+  'KYC-verified, secure wallet management',
 ]
 
 export default function Products() {
@@ -171,12 +172,12 @@ export default function Products() {
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <div>
                     <h2 className="font-display text-3xl font-bold text-white mb-1">Auspitech Gadgets</h2>
-                    <p className="text-cobalt font-body text-sm font-medium">Tech Accessories</p>
+                    <p className="text-cobalt font-body text-sm font-medium">Electronics & Laptops</p>
                   </div>
                 </div>
 
                 <p className="text-warm-white/65 font-body leading-relaxed mb-6">
-                  Premium tech accessories and gadgets curated for the modern African professional. We're sourcing the best peripherals, ergonomic tools, and workspace essentials — at prices that respect your budget.
+                  Auspitech Gadgets is a premier electronics retail business offering high-quality laptops and gadgets at highly competitive prices. We import directly from manufacturers in China and the UK — cutting out the middlemen — and distribute globally through both physical stores and an online platform.
                 </p>
 
                 <ul className="space-y-2 mb-6">
@@ -225,11 +226,11 @@ export default function Products() {
               <div className="p-8 lg:p-10 flex flex-col justify-center order-2 lg:order-1">
                 <div className="mb-3">
                   <h2 className="font-display text-3xl font-bold text-white mb-1">Avezt</h2>
-                  <p className="text-gold font-body text-sm font-medium">A Bold New Platform</p>
+                  <p className="text-gold font-body text-sm font-medium">Digital Agriculture Investment Platform</p>
                 </div>
 
                 <p className="text-warm-white/65 font-body leading-relaxed mb-6">
-                  Something you haven't seen before. Avezt is being built at the intersection of creativity, community, and commerce — a platform that will change how African creatives and entrepreneurs connect, collaborate, and grow. More details coming very soon.
+                  Avezt democratizes agricultural investment by connecting retail investors with Nigerian agricultural commodities — palm oil, palm kernel oil, yam, maize, cocoa, livestock, and poultry — through a mobile application. With low entry barriers, real-time performance tracking, secure wallet management, and automated payouts at maturity, Avezt makes agriculture accessible, transparent, and profitable for everyone.
                 </p>
 
                 <ul className="space-y-2 mb-6">
@@ -252,8 +253,8 @@ export default function Products() {
               {/* Image */}
               <div className="relative h-64 lg:h-auto min-h-[280px] overflow-hidden order-1 lg:order-2 rounded-tr-3xl rounded-tl-3xl lg:rounded-tr-3xl lg:rounded-br-3xl lg:rounded-tl-none">
                 <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&h=500&fit=crop"
-                  alt="Avezt Platform"
+                  src="https://images.unsplash.com/photo-1596571289799-a8df74d79a73?w=700&h=500&fit=crop"
+                  alt="Palm oil agricultural plantation"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark-card/60 lg:bg-gradient-to-l lg:from-transparent lg:to-dark-card/70" />
