@@ -115,10 +115,10 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-navy/65 dark:text-warm-white/65 font-body leading-relaxed">
                 <p>
-                  Auspitech Solutions was born in Lagos in 2026 from a simple but powerful frustration: too many talented Nigerian entrepreneurs and businesses were held back not by lack of ambition, but by lack of access to professional branding and technology services that truly understood the African market.
+                  Auspitech Solutions was born in 2026 from a simple but powerful frustration: too many talented Nigerian entrepreneurs and businesses were held back not by lack of ambition, but by lack of access to professional branding and technology services that truly understood the African market.
                 </p>
                 <p>
-                  Our founders — a designer, a developer, and a brand strategist — came together with a shared conviction: that world-class creative and digital services shouldn't be reserved for multinational corporations with enormous budgets. Small businesses, startups, and independent entrepreneurs deserve the same quality, the same strategic depth, the same commitment to excellence.
+                  Our founder — a designer, a developer, and a brand strategist — had a conviction: that world-class creative and digital services shouldn't be reserved for multinational corporations with enormous budgets. Small businesses, startups, and independent entrepreneurs deserve the same quality, the same strategic depth, the same commitment to excellence.
                 </p>
                 <p>
                   Since then, we've grown into a multidisciplinary team delivering brand identities, graphic design, web applications, and mobile products for clients across Nigeria and beyond. Every project we take on carries the same weight as our first — we show up fully, we execute with precision, and we celebrate our clients' wins as our own.
