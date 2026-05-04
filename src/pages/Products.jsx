@@ -253,8 +253,8 @@ export default function Products() {
               {/* Image */}
               <div className="relative h-64 lg:h-auto min-h-[280px] overflow-hidden order-1 lg:order-2 rounded-tr-3xl rounded-tl-3xl lg:rounded-tr-3xl lg:rounded-br-3xl lg:rounded-tl-none">
                 <img
-                  src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=700&h=500&fit=crop"
-                  alt="Palm tree plantation"
+                  src="https://images.unsplash.com/photo-1601593346740-925612772716?w=700&h=500&fit=crop"
+                  alt="Maize field"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark-card/60 lg:bg-gradient-to-l lg:from-transparent lg:to-dark-card/70" />
