@@ -17,6 +17,21 @@ const LinkedinIcon = ({ size = 16 }) => (
     <circle cx="4" cy="4" r="2"/>
   </svg>
 )
+const FacebookIcon = ({ size = 16 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  </svg>
+)
+const XIcon = ({ size = 16 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+)
+const TikTokIcon = ({ size = 16 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+  </svg>
+)
 
 const services = [
   'Brand Identity & Strategy',
@@ -262,13 +277,13 @@ export default function Contact() {
                   </div>
                 </a>
 
-                <a href="tel:+2348000000000" className="flex items-center gap-3 group">
+                <a href="tel:+2348148645867" className="flex items-center gap-3 group">
                   <div className="w-10 h-10 bg-cobalt/10 rounded-xl flex items-center justify-center group-hover:bg-cobalt transition-colors">
                     <Phone size={16} className="text-cobalt group-hover:text-white transition-colors" />
                   </div>
                   <div>
                     <p className="text-xs text-navy/40 dark:text-warm-white/40 font-body">Phone</p>
-                    <p className="text-navy dark:text-warm-white text-sm font-body font-medium">+234 800 000 0000</p>
+                    <p className="text-navy dark:text-warm-white text-sm font-body font-medium">+234 814 864 5867</p>
                   </div>
                 </a>
 
@@ -282,35 +297,29 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-navy/10 dark:border-white/10 flex gap-3">
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 border border-navy/15 dark:border-white/15 rounded-xl py-2.5 text-navy/60 dark:text-warm-white/60 hover:border-cobalt/40 hover:text-cobalt transition-all text-sm font-body"
-                    aria-label="Instagram"
-                  >
-                    <InstagramIcon size={16} />
+                <div className="pt-4 border-t border-navy/10 dark:border-white/10 grid grid-cols-3 gap-2">
+                  <a href="https://instagram.com/auspitech_solution" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 border border-navy/15 dark:border-white/15 rounded-xl py-2.5 text-navy/60 dark:text-warm-white/60 hover:border-cobalt/40 hover:text-cobalt transition-all text-xs font-body" aria-label="Instagram">
+                    <InstagramIcon size={14} />
                     Instagram
                   </a>
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 border border-navy/15 dark:border-white/15 rounded-xl py-2.5 text-navy/60 dark:text-warm-white/60 hover:border-cobalt/40 hover:text-cobalt transition-all text-sm font-body"
-                    aria-label="LinkedIn"
-                  >
-                    <LinkedinIcon size={16} />
+                  <a href="https://www.facebook.com/AuspitechSolutions" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 border border-navy/15 dark:border-white/15 rounded-xl py-2.5 text-navy/60 dark:text-warm-white/60 hover:border-cobalt/40 hover:text-cobalt transition-all text-xs font-body" aria-label="Facebook">
+                    <FacebookIcon size={14} />
+                    Facebook
+                  </a>
+                  <a href="https://x.com/AuspitechSolution" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 border border-navy/15 dark:border-white/15 rounded-xl py-2.5 text-navy/60 dark:text-warm-white/60 hover:border-cobalt/40 hover:text-cobalt transition-all text-xs font-body" aria-label="Twitter / X">
+                    <XIcon size={14} />
+                    Twitter / X
+                  </a>
+                  <a href="https://tiktok.com/@auspitechsolution" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 border border-navy/15 dark:border-white/15 rounded-xl py-2.5 text-navy/60 dark:text-warm-white/60 hover:border-cobalt/40 hover:text-cobalt transition-all text-xs font-body" aria-label="TikTok">
+                    <TikTokIcon size={14} />
+                    TikTok
+                  </a>
+                  <a href="https://www.linkedin.com/company/auspitech-solution/about/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 border border-navy/15 dark:border-white/15 rounded-xl py-2.5 text-navy/60 dark:text-warm-white/60 hover:border-cobalt/40 hover:text-cobalt transition-all text-xs font-body" aria-label="LinkedIn">
+                    <LinkedinIcon size={14} />
                     LinkedIn
                   </a>
-                  <a
-                    href="https://wa.me/2348000000000"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 border border-navy/15 dark:border-white/15 rounded-xl py-2.5 text-navy/60 dark:text-warm-white/60 hover:border-[#25D366]/40 hover:text-[#25D366] transition-all text-sm font-body"
-                    aria-label="WhatsApp"
-                  >
-                    <MessageSquare size={16} />
+                  <a href="https://wa.me/2348148645867" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 border border-navy/15 dark:border-white/15 rounded-xl py-2.5 text-navy/60 dark:text-warm-white/60 hover:border-[#25D366]/40 hover:text-[#25D366] transition-all text-xs font-body" aria-label="WhatsApp">
+                    <MessageSquare size={14} />
                     WhatsApp
                   </a>
                 </div>
