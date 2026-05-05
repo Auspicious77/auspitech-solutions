@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -72,7 +72,7 @@ export default function App() {
   }, [darkMode])
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <AnimatePresence>
         {loading && <Preloader key="preloader" />}
@@ -89,6 +89,6 @@ export default function App() {
           <CookieToast />
         </div>
       )}
-    </BrowserRouter>
+    </HashRouter>
   )
 }
