@@ -150,8 +150,8 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={16} className="text-cobalt mt-0.5 flex-shrink-0" />
-                <a href="mailto:hello@auspitech.com" className="text-warm-white/60 hover:text-cobalt text-sm font-body transition-colors">
-                  hello@auspitech.com
+                <a href="mailto:auspitechsolution@gmail.com" className="text-warm-white/60 hover:text-cobalt text-sm font-body transition-colors">
+                  auspitechsolution@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">

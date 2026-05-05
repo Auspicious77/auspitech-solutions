@@ -267,13 +267,13 @@ export default function Contact() {
               <div className="bg-white dark:bg-dark-card rounded-2xl p-6 border border-navy/10 dark:border-white/10 space-y-5">
                 <h3 className="font-display font-bold text-navy dark:text-warm-white mb-4">Reach Us Directly</h3>
 
-                <a href="mailto:hello@auspitech.com" className="flex items-center gap-3 group">
+                <a href="mailto:auspitechsolution@gmail.com" className="flex items-center gap-3 group">
                   <div className="w-10 h-10 bg-cobalt/10 rounded-xl flex items-center justify-center group-hover:bg-cobalt transition-colors">
                     <Mail size={16} className="text-cobalt group-hover:text-white transition-colors" />
                   </div>
                   <div>
                     <p className="text-xs text-navy/40 dark:text-warm-white/40 font-body">Email</p>
-                    <p className="text-navy dark:text-warm-white text-sm font-body font-medium">hello@auspitech.com</p>
+                    <p className="text-navy dark:text-warm-white text-sm font-body font-medium">auspitechsolution@gmail.com</p>
                   </div>
                 </a>
 
