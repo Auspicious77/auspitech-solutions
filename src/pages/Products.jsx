@@ -277,7 +277,7 @@ export default function Products() {
             If you're an investor, partner, or creative who wants to contribute to what we're building, we'd love to hear from you.
           </p>
           <a
-            href="/contact"
+            href="#/contact"
             className="inline-flex items-center gap-2 bg-cobalt text-white px-8 py-4 rounded-xl font-semibold font-body text-sm btn-shimmer hover:bg-cobalt-light transition-colors"
           >
             Get In Touch
